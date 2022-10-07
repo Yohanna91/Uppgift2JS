@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div id="utloggad">
+      <h1>Vänligen logga in</h1>
+      <input type="text" id="namn" /> <br /><br />
+      <input type="password" id="lösenord" /> <br /><br />
+      <input type="submit" value="Logga in" id="loggain" />
+      <p id="felmeddelande"></p>
+    </div>
+
+    <div id="registrera">
+      <h1>Skapa ett nytt konto</h1>
+      <input type="text" id="register_namn" placeholder="exempel: Tim" />
+      <br /><br />
+      <input
+        type="password"
+        id="register_lösenord"
+        placeholder="Välj ett lösenord"
+      />
+      <br /><br />
+      <input type="submit" value="Registrera" id="registreraknapp" />
+    </div>
+
+    <div id="inloggad">
+      <input type="submit" value="Logga ut" id="loggaut" />
+      <h1>Du är inloggad som <span id="inloggadsom"></span></h1>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
